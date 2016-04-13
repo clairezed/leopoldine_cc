@@ -44,6 +44,21 @@ $ jekyll serve --detach
 #    If you cannot find the PID, then do, `ps aux | grep jekyll` and kill the instance. [Read more](http://unixhelp.ed.ac.uk/shell/jobz5.html).
 ```
 
+## Github page deployement
+
+```
+$ git checkout -b gh-pages
+$ git push origin gh-pages
+```
+
+Change your website `_config.yml` file to:
+
+``` yaml
+baseurl: /leopoldine_cc
+url: https://clairezed.github.io/leopoldine_cc
+```
+
+
 ## Resources
 
 - https://borisschapira.com/2016/02/jekyll-codeship/
